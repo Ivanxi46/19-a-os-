@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para mi compañera de viaje ❤️</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#000;
+overflow:hidden;
+color:white;
+}
+
+#inicio{
+position:fixed;
+width:100%;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+background:black;
+font-size:2em;
+text-align:center;
+animation:desaparecer 2.5s forwards;
+animation-delay:2s;
+z-index:10;
+}
+
+@keyframes desaparecer{
+to{
+opacity:0;
+visibility:hidden;
+}
+}
+
+#fondo{
+position:fixed;
+width:100%;
+height:100%;
+background:url("foto.jpg") center center;
+background-size:cover;
+filter:blur(4px) brightness(.45);
+transform:scale(1.1);
+}
+
+#contenido{
+position:absolute;
+width:100%;
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:25px;
+text-align:center;
+opacity:0;
+animation:aparecer 2s forwards;
+animation-delay:4s;
+}
+
+@keyframes aparecer{
+to{
+opacity:1;
+}
+
+}
+
+h1{
+font-size:2em;
+margin-bottom:25px;
+}
+
+p{
+font-size:1.25em;
+line-height:1.8;
+max-width:700px;
+}
+
+.grande{
+font-size:2em;
+font-weight:bold;
+margin-top:30px;
+margin-bottom:30px;
+color:#ffb6c1;
+}
+
+button{
+
+margin-top:20px;
+padding:15px 35px;
+border:none;
+border-radius:40px;
+font-size:18px;
+cursor:pointer;
+background:#ff4081;
+color:white;
+
+}
+
+button:hover{
+
+transform:scale(1.05);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="inicio">
+Tengo algo que decirte... ❤️
+</div>
+
+<div id="fondo"></div>
+
+<div id="contenido">
+
+<h1>Para mi compañera de viaje... ❤️</h1>
+
+<p>
+
+Cada kilómetro contigo ha merecido la pena.
+
+<br><br>
+
+Gracias por ser mi copiloto, mi refugio y la persona con la que quiero seguir recorriendo la vida.
+
+</p>
+
+<div class="grande">
+
+Porque esto...
+
+<br><br>
+
+NO ES PARA TANTO...
+
+<br><br>
+
+ES PARA SIEMPRE. ❤️
+
+</div>
+
+<p>
+
+Feliz aniversario, mi amor.
+
+<br><br>
+
+<strong>6 de agosto ❤️</strong>
+
+</p>
+
+<button onclick="window.open('https://www.youtube.com/results?search_query=Malú+Abraham+Mateo+Blanco+y+Negro','_blank')">
+
+🎵 Nuestra canción
+
+</button>
+
+</div>
+
+</body>
+</html>
